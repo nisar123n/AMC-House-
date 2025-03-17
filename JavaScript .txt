@@ -1,0 +1,124 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the values from the input fields
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Simple validation (you can replace this with real authentication)
+    if (username === 'admin' && password === 'password') {
+        document.getElementById('message').innerText = 'Login successful!';
+        // Redirect to another page or perform other actions
+        // window.location.href = 'homepage.html'; // Uncomment to redirect
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+    }
+});
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the values from the input fields
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const rememberMe = document.getElementById('rememberMe').checked;
+
+    // Simple validation (you can replace this with real authentication)
+    if (username === 'admin' && password === 'password') {
+        document.getElementById('message').innerText = 'Login successful!';
+
+        // Remember Me functionality
+        if (rememberMe) {
+            // Store username in localStorage
+            localStorage.setItem('username', username);
+        } else {
+            // Clear username from localStorage
+            localStorage.removeItem('username');
+        }
+
+        // Redirect to another page or perform other actions
+        // window.location.href = 'homepage.html'; // Uncomment to redirect
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+    }
+});
+
+// Check if username is stored in localStorage
+window.onload = function() {
+    const savedUsername = localStorage.getItem('username');
+    if (savedUsername) {
+        document.getElementById('username').value = savedUsername;
+        document.getElementById('rememberMe').checked = true;
+    }
+};
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the values from the input fields
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const rememberMe = document.getElementById('rememberMe').checked;
+
+    // Simple validation (you can replace this with real authentication)
+    if (username === 'admin' && password === 'password') {
+        document.getElementById('message').innerText = 'Login successful!';
+
+        // Remember Me functionality
+        if (rememberMe) {
+            // Store username in localStorage
+            localStorage.setItem('username', username);
+        } else {
+            // Clear username from localStorage
+            localStorage.removeItem('username');
+        }
+
+        // Redirect to another page or perform other actions
+        // window.location.href = 'homepage.html'; // Uncomment to redirect
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+    }
+});
+
+// Check if username is stored in localStorage
+window.onload = function() {
+    const savedUsername = localStorage.getItem('username');
+    if (savedUsername) {
+        document.getElementById('username').value = savedUsername;
+        document.getElementById('rememberMe').checked = true;
+    }
+};
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the values from the input fields
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const rememberMe = document.getElementById('rememberMe').checked;
+
+    // Simple validation (you can replace this with real authentication)
+    if (username === 'admin' && password === 'password') {
+        document.getElementById('message').innerText = 'Login successful!';
+
+        // Remember Me functionality
+        if (rememberMe) {
+            // Store username in localStorage
+            localStorage.setItem('username', username);
+        } else {
+            // Clear username from localStorage
+            localStorage.removeItem('username');
+        }
+
+        // Redirect to another page or perform other actions
+        // window.location.href = 'homepage.html'; // Uncomment to redirect
+    } else {
+        document.getElementById('message').innerText = 'Invalid username or password.';
+    }
+});
+
+// Check if username is stored in localStorage
+window.onload = function() {
+    const savedUsername = localStorage.getItem('username');
+    if (savedUsername) {
+        document.getElementById('username').value = savedUsername;
+        document.getElementById('rememberMe').checked = true;
+    }
+};
